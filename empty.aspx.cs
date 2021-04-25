@@ -5,9 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class masterPageTrangChu : System.Web.UI.MasterPage
+public partial class empty : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+       
     }
 }

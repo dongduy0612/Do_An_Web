@@ -4,6 +4,9 @@
     <link rel="stylesheet" href="Css/home.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <asp:Literal runat="server" ID="ltrLoginRegister"></asp:Literal>
+    </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
 
     <h1 class="title">
         <asp:HyperLink runat="server" ID="HyperLink1" CssClass="title__link" Style="background-image: url(img/lbcenter.png)">

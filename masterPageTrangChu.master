@@ -36,15 +36,9 @@
                                         <asp:HyperLink ID="hlKiemTraDonHang" CssClass="header__first-menu-link" runat="server" NavigateUrl="#">Kiểm tra đơn hàng</asp:HyperLink>
                                     </li>
                                 </ul>
-                                <ul class="header__first-menu">
-                                    <li class="header__first-menu-item">
-                                        <asp:HyperLink ID="hlDangNhap" CssClass="header__first-menu-link" runat="server" NavigateUrl="#">Đăng nhập</asp:HyperLink>
-                                    </li>
-                                    <li class="header__first-menu-item">
-                                        <asp:HyperLink ID="hlDangKy" CssClass="header__first-menu-link" runat="server" NavigateUrl="#">Đăng ký</asp:HyperLink>
-                                    </li>
-                                </ul>
-                            </div>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                                 </div>
 
                         </div>
                     </div>
@@ -110,7 +104,7 @@
                 <div class="container" style="background-size: cover; background: url(img/bg_pattern.jpg)">
                     <div class="left"></div>
                     <div class="content">
-                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
                         </asp:ContentPlaceHolder>
                     </div>
                 </div>
