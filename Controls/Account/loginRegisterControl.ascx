@@ -44,9 +44,15 @@
                 <asp:CompareValidator ID="CompareValidator1" ControlToValidate="txtPWRegister" Operator="Equal" ControlToCompare="txtPWPre" runat="server" ValidationGroup="register" Text="Mật khẩu không trùng khớp" Display="Dynamic" ErrorMessage="CompareValidator"></asp:CompareValidator>
             </div>
             <div class="register__group">
+                <p>Tên hiển thị</p>
+                <asp:TextBox runat="server" ID="txtTenHienThi" ></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ValidationGroup="register" ControlToValidate="txtTenHienThi" Text="Tên hiển thị không được bỏ trống" Display="Dynamic" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+            </div>
+            <div class="register__group">
                 <p>Ngày sinh</p>
                 <asp:TextBox runat="server" ID="txtDate" TextMode="Date"></asp:TextBox>
             </div>
+            
             <asp:Button runat="server" OnClick="btnRegister1_Click" ID="btnRegister1" Text="Đăng ký" ValidationGroup="register" CssClass="btn" />
             <p>
                 <span>Bạn đã có tài khoản? Hãy </span>

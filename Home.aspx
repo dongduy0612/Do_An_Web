@@ -1,12 +1,21 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterPageTrangChu.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Home" %>
 
+<%@ Register Src="~/Controls/loadControls.ascx" TagPrefix="uc1" TagName="loadControls" %>
+<%@ Register Src="~/Controls/loadSideBarAdmin.ascx" TagPrefix="uc1" TagName="loadSideBarAdmin" %>
+
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link rel="stylesheet" href="Css/home.css" />
+    <link rel="stylesheet" href="Css/admin.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <asp:Literal runat="server" ID="ltrLoginRegister"></asp:Literal>
-    </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
+    <uc1:loadSideBarAdmin runat="server" ID="loadSideBarAdmin" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder3" runat="Server">
 
     <h1 class="title">
         <asp:HyperLink runat="server" ID="HyperLink1" CssClass="title__link" Style="background-image: url(img/lbcenter.png)">
@@ -35,7 +44,7 @@
                     <asp:Button runat="server" Text="Mua ngay" ID="btnMuaNgay" CssClass="btn" />
                 </div>
             </li>
-              <li class="book__item">
+            <li class="book__item">
                 <asp:HyperLink runat="server" NavigateUrl="#" CssClass="book">
                    <img src="img/6KCM16U4.jpg"/>
                 </asp:HyperLink>
@@ -55,7 +64,7 @@
                     <asp:Button runat="server" Text="Mua ngay" ID="Button2" CssClass="btn" />
                 </div>
             </li>
-              <li class="book__item">
+            <li class="book__item">
                 <asp:HyperLink runat="server" NavigateUrl="#" CssClass="book">
                    <img src="img/6KCM16U4.jpg"/>
                 </asp:HyperLink>
@@ -75,7 +84,7 @@
                     <asp:Button runat="server" Text="Mua ngay" ID="Button4" CssClass="btn" />
                 </div>
             </li>
-              <li class="book__item">
+            <li class="book__item">
                 <asp:HyperLink runat="server" NavigateUrl="#" CssClass="book">
                    <img src="img/6KCM16U4.jpg"/>
                 </asp:HyperLink>
@@ -95,7 +104,7 @@
                     <asp:Button runat="server" Text="Mua ngay" ID="Button6" CssClass="btn" />
                 </div>
             </li>
-              <li class="book__item">
+            <li class="book__item">
                 <asp:HyperLink runat="server" NavigateUrl="#" CssClass="book">
                    <img src="img/6KCM16U4.jpg"/>
                 </asp:HyperLink>
@@ -115,7 +124,7 @@
                     <asp:Button runat="server" Text="Mua ngay" ID="Button8" CssClass="btn" />
                 </div>
             </li>
-              <li class="book__item">
+            <li class="book__item">
                 <asp:HyperLink runat="server" NavigateUrl="#" CssClass="book">
                    <img src="img/6KCM16U4.jpg"/>
                 </asp:HyperLink>
@@ -135,7 +144,7 @@
                     <asp:Button runat="server" Text="Mua ngay" ID="Button10" CssClass="btn" />
                 </div>
             </li>
-              <li class="book__item">
+            <li class="book__item">
                 <asp:HyperLink runat="server" NavigateUrl="#" CssClass="book">
                    <img src="img/6KCM16U4.jpg"/>
                 </asp:HyperLink>
@@ -184,7 +193,7 @@
                     <asp:Button runat="server" Text="Mua ngay" ID="Button14" CssClass="btn" />
                 </div>
             </li>
-              <li class="book__item">
+            <li class="book__item">
                 <asp:HyperLink runat="server" NavigateUrl="#" CssClass="book">
                    <img src="img/6KCM16U4.jpg"/>
                 </asp:HyperLink>
@@ -204,7 +213,7 @@
                     <asp:Button runat="server" Text="Mua ngay" ID="Button16" CssClass="btn" />
                 </div>
             </li>
-              <li class="book__item">
+            <li class="book__item">
                 <asp:HyperLink runat="server" NavigateUrl="#" CssClass="book">
                    <img src="img/6KCM16U4.jpg"/>
                 </asp:HyperLink>
@@ -224,7 +233,7 @@
                     <asp:Button runat="server" Text="Mua ngay" ID="Button18" CssClass="btn" />
                 </div>
             </li>
-              <li class="book__item">
+            <li class="book__item">
                 <asp:HyperLink runat="server" NavigateUrl="#" CssClass="book">
                    <img src="img/6KCM16U4.jpg"/>
                 </asp:HyperLink>
@@ -244,7 +253,7 @@
                     <asp:Button runat="server" Text="Mua ngay" ID="Button20" CssClass="btn" />
                 </div>
             </li>
-              <li class="book__item">
+            <li class="book__item">
                 <asp:HyperLink runat="server" NavigateUrl="#" CssClass="book">
                    <img src="img/6KCM16U4.jpg"/>
                 </asp:HyperLink>
@@ -264,7 +273,7 @@
                     <asp:Button runat="server" Text="Mua ngay" ID="Button22" CssClass="btn" />
                 </div>
             </li>
-              <li class="book__item">
+            <li class="book__item">
                 <asp:HyperLink runat="server" NavigateUrl="#" CssClass="book">
                    <img src="img/6KCM16U4.jpg"/>
                 </asp:HyperLink>
@@ -284,7 +293,7 @@
                     <asp:Button runat="server" Text="Mua ngay" ID="Button24" CssClass="btn" />
                 </div>
             </li>
-              <li class="book__item">
+            <li class="book__item">
                 <asp:HyperLink runat="server" NavigateUrl="#" CssClass="book">
                    <img src="img/6KCM16U4.jpg"/>
                 </asp:HyperLink>

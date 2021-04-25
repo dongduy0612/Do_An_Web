@@ -35,7 +35,7 @@
         padding: 20px 28px 50px;
         background-repeat: no-repeat;
         top: 18%;
-        right: 86%;
+        right: 85%;
     }
 
 .group_book {
@@ -167,9 +167,3 @@
     .btn + .btn {
         margin-top:4px;
     }
-.btnDangXuat.header__first-menu-link{
-    cursor:pointer;
-    outline:none;
-    border:none;
-    background-color:transparent;
-}

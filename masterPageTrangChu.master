@@ -102,9 +102,12 @@
                     </div>
                 </header>
                 <div class="container" style="background-size: cover; background: url(img/bg_pattern.jpg)">
-                    <div class="left"></div>
+                    <div class="left">
+                         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
                     <div class="content">
-                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
                         </asp:ContentPlaceHolder>
                     </div>
                 </div>

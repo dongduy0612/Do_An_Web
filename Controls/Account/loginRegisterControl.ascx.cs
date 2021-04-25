@@ -43,7 +43,8 @@ public partial class Controls_Account_loginRegisterControl : System.Web.UI.UserC
         if (txtEmailLogin.Text.Equals("dongduy0612@gmail.com") && txtPWLogin.Text.Equals("12345"))
         {
             Session["checkDN"] = "1";
-            Response.Redirect("Home.aspx");
+            Session["qtc"] = "admin";
+            Response.Redirect("Home.aspx?modul=admin");
         }
         else
         {
