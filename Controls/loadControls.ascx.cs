@@ -24,22 +24,33 @@ public partial class Controls_loadControls : System.Web.UI.UserControl
             case "admin":
                 switch (submodul) {
                     case "qldmb":
-                        PlaceHolder1.Controls.Add(LoadControl("Admin/Manager/CategoryBook/categoryBook.ascx"));
+                        PlaceHolder1.Controls.Add(LoadControl("Admin/Manager/categoryBook.ascx"));
                         break;
                     case "qldsb":
-                        PlaceHolder1.Controls.Add(LoadControl("Admin/Manager/listBook/listBook.ascx"));
+                        PlaceHolder1.Controls.Add(LoadControl("Admin/Manager/listBook.ascx"));
                         break;
                     case "qldstk":
-                        PlaceHolder1.Controls.Add(LoadControl("Admin/Manager/listAccount/listAccount.ascx"));
+                        PlaceHolder1.Controls.Add(LoadControl("Admin/Manager/listAccount.ascx"));
                         break;
                     case "tmdmb":
-                        PlaceHolder1.Controls.Add(LoadControl("Admin/AddNew/AddCategoryBook/addCategoryBook.ascx"));
+                        PlaceHolder1.Controls.Add(LoadControl("Admin/AddNew/addCategoryBook.ascx"));
                         break;
                     case "tmb":
-                        PlaceHolder1.Controls.Add(LoadControl("Admin/AddNew/AddBook/addBook.ascx"));
+                        PlaceHolder1.Controls.Add(LoadControl("Admin/AddNew/addBook.ascx"));
                         break;
                 }
-                break;           
+                break;
+            case "tl":
+                switch (submodul)                    
+                {
+                   case "ts":
+                        PlaceHolder1.Controls.Add(LoadControl("Book/book.ascx"));
+                        break;
+                }
+                break;
+            case "gt":
+               PlaceHolder1.Controls.Add(LoadControl("Introduce/introduce.ascx"));
+                break;
         }
 
       

@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="~/Css/libary.css" />
     <link rel="stylesheet" type="text/css" href="~/Css/base.css" />
+    
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -27,7 +28,7 @@
                             <div class="header__first">
                                 <ul class="header__first-menu">
                                     <li class="header__first-menu-item">
-                                        <asp:HyperLink ID="hlGioiThieu" CssClass="header__first-menu-link" NavigateUrl="#" runat="server">Giới thiệu</asp:HyperLink>
+                                        <asp:HyperLink ID="hlGioiThieu" CssClass="header__first-menu-link" NavigateUrl="empty.aspx?modul=gt" runat="server">Giới thiệu</asp:HyperLink>
                                     </li>
                                     <li class="header__first-menu-item">
                                         <asp:HyperLink ID="hlLichSu" CssClass="header__first-menu-link" runat="server" NavigateUrl="#">Lịch sử đơn hàng</asp:HyperLink>
@@ -119,7 +120,7 @@
                                 <ul class="footer__menu">
                                     <li class="footer__item">
                                         <img src="img/arricon.png" class="footer__icon"/>
-                                        <asp:HyperLink runat="server" NavigateUrl="#">
+                                        <asp:HyperLink runat="server" NavigateUrl="empty.aspx?modul=gt">
                                             Giới thiệu
                                         </asp:HyperLink>
                                     </li>

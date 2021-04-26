@@ -12,7 +12,7 @@ public partial class Controls_loadSideBarAdmin : System.Web.UI.UserControl
     {
         if (Request.QueryString["modul"] != null)
             modul = Request.QueryString["modul"];
-        string quyen = "kh";
+        string quyen = "";
         if (Session["qtc"] != null)
             quyen = Session["qtc"].ToString();
         if (quyen.Equals("admin"))

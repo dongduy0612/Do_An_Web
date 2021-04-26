@@ -10,7 +10,6 @@ public partial class Controls_Account_loginRegisterControl : System.Web.UI.UserC
     string modul = "";
     protected void Page_Load(object sender, EventArgs e)
     {
-        Session["checkDN"] = "0";
         if (Request.QueryString["modul"] != null)
             modul = Request.QueryString["modul"];
         switch (modul)

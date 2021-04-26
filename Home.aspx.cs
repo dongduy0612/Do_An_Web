@@ -9,17 +9,25 @@ public partial class Home : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+
+    }
+    protected string load()
+    {
+        string value = "";
         string checkdn = "0";
         string quyen = "kh";
         if (Session["qtc"] != null)
-            quyen = Session["qtc"].ToString();       
+            quyen = Session["qtc"].ToString();
         if (Session["checkDN"] != null)
             checkdn = Session["checkDN"].ToString();
         if (Request.QueryString["modul"] != null && Request.QueryString["modul"].Equals("dx"))
-        { Session["checkDN"] = 0; Session["qtc"] = "kh";quyen = "kh"; checkdn = "0";/*Response.Redirect("empty.aspx?modul=dn");*/ }       
-        if (checkdn.Equals("1") )         
         {
-            ltrLoginRegister.Text = @"
+            Session.Clear();
+            Response.Redirect("/Home.aspx", false);
+        }
+        if (checkdn.Equals("1"))
+        {
+            value = @"
         <ul class='header__first-menu'>
               <li class='header__first-menu-item'>
                   <a Class='header__first-menu-link' runat='server' >Xin chào admin</a>
@@ -31,7 +39,7 @@ public partial class Home : System.Web.UI.Page
         }
         else
         {
-            ltrLoginRegister.Text = @"
+            value = @"
         <ul class='header__first-menu'>
               <li class='header__first-menu-item'>
                   <a class='header__first-menu-link' runat='server' href='empty.aspx?modul=dn'>Đăng nhập</a>
@@ -41,10 +49,8 @@ public partial class Home : System.Web.UI.Page
               </li>
          </ul>";
         }
+
+        return value;
     }
-    protected void btnDangXuat_Click(object sender, EventArgs e)
-    {
-        Session["checkDN"] = "0";
-        Response.Redirect("Home.aspx");
-    }
+
 }

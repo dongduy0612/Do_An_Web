@@ -20,11 +20,10 @@
             <asp:label runat="server"  CssClass="lbNotifyLogin" ID="lbNotifyLogin"></asp:label>
             <p>
                 <span>Chưa có tài khoản? Hãy</span>
-           <asp:Button runat="server" Text="Đăng ký" ID="btnRegister"  CssClass="btn" OnClick="btnRegister_Click" />
-
+           <asp:Button runat="server" Text="Đăng ký" ID="btnRegister"  CssClass="btn" OnClick="btnRegister_Click" style="height: 29px" />
             </p>
         </div>
-    </asp:View>
+    </asp:View>   
     <asp:View ID="vwRegister" runat="server">
         <div class="register">
             <h1 class="register__title">Đăng ký
