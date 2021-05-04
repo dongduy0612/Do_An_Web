@@ -18,6 +18,9 @@ CREATE TABLE THELOAI
 	TENTHELOAI NVARCHAR(50)
 )
 ------TẠO BẢNG SACH
+select *from theloai
+select *from sach where matheloai='TL08'
+
 CREATE TABLE SACH
 (
 	MASACH CHAR(10) NOT NULL PRIMARY KEY, 
