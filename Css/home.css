@@ -141,7 +141,10 @@
     opacity:1;
     transform:scale(1);
 }
-
+.book__item img{
+    min-width:148px;
+    max-height:230px;
+}
     .book__item-notify > h3 {
   font-size: 1.3rem;
     text-transform: uppercase;
