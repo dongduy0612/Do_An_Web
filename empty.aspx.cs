@@ -28,7 +28,7 @@ public partial class empty : System.Web.UI.Page
             value = @"
         <ul class='header__first-menu'>
               <li class='header__first-menu-item'>
-                  <a Class='header__first-menu-link' runat='server' >Xin chào admin</a>
+                  <a Class='header__first-menu-link' runat='server' >Xin chào "+Session["tenhienthi"]+@"</a>
               </li>
               <li class='header__first-menu-item'>
                    <a  Class='btnDangXuat header__first-menu-link' ID='btnDangXuat' onclick='btnDangXuat_Click' runat='server' href='Home.aspx?modul=dx' >Đăng xuất</a>

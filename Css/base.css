@@ -135,7 +135,6 @@ html {
     list-style: none;
     text-align: left;
     left: 0;
-    right: 0;
     transform: scale(1,0);
     transform-origin: 100% 0;
     opacity: 0;

@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="~/Css/libary.css" />
     <link rel="stylesheet" type="text/css" href="~/Css/base.css" />
-    
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -39,13 +39,13 @@
                                 </ul>
                                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                                 </asp:ContentPlaceHolder>
-                                 </div>
+                            </div>
 
                         </div>
                     </div>
-                    <div class="header__logos"  >
+                    <div class="header__logos">
                         <div class="grid wide header__group-search">
-                            <a href="Home.aspx" style="text-decoration: none">
+                            <a  href="Home.aspx" style="text-decoration: none">
                                 <asp:Image ID="imgLogo" runat="server" ImageUrl="~/img/logo.png" />
 
                             </a>
@@ -66,7 +66,8 @@
                                 <li class="header__nav-item">
                                     <asp:HyperLink runat="server" NavigateUrl="#">Danh mục sách</asp:HyperLink>
                                     <ul class="header__nav-sub-menu">
-                                        <li class="header__nav-sub-menu-item">
+                                        <%=loadMenu() %>
+                                        <%-- <li class="header__nav-sub-menu-item">
                                             <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="#">Văn học Việt Nam</asp:HyperLink>
                                             <ul class="header__nav-subb-menu">
                                                 <li class="header__nav-subb-menu-item">
@@ -86,7 +87,7 @@
                                         <li class="header__nav-sub-menu-item">
                                             <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="#">Thiếu nhi</asp:HyperLink>
 
-                                        </li>
+                                        </li>--%>
                                     </ul>
                                 </li>
                                 <li class="header__nav-item">
@@ -104,7 +105,7 @@
                 </header>
                 <div class="container" style="background-size: cover; background: url(img/bg_pattern.jpg)">
                     <div class="left">
-                         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
                         </asp:ContentPlaceHolder>
                     </div>
                     <div class="content">
@@ -115,72 +116,72 @@
                 <footer class="footer">
                     <div class="footer__first">
                         <div class="grid wide">
-                        <div class="row">
-                            <div class="l-3">
-                                <ul class="footer__menu">
-                                    <li class="footer__item">
-                                        <img src="img/arricon.png" class="footer__icon"/>
-                                        <asp:HyperLink runat="server" NavigateUrl="empty.aspx?modul=gt">
+                            <div class="row">
+                                <div class="l-3">
+                                    <ul class="footer__menu">
+                                        <li class="footer__item">
+                                            <img src="img/arricon.png" class="footer__icon" />
+                                            <asp:HyperLink runat="server" NavigateUrl="empty.aspx?modul=gt">
                                             Giới thiệu
-                                        </asp:HyperLink>
-                                    </li>
-                                    <li class="footer__item">
-                                        <img src="img/arricon.png" class="footer__icon"/>
+                                            </asp:HyperLink>
+                                        </li>
+                                        <li class="footer__item">
+                                            <img src="img/arricon.png" class="footer__icon" />
 
-                                        <asp:HyperLink runat="server" NavigateUrl="#">
+                                            <asp:HyperLink runat="server" NavigateUrl="#">
                                          Chính sách bảo mật
-                                        </asp:HyperLink>
-                                    </li>
-                                    <li class="footer__item">
-                                        <img src="img/arricon.png" class="footer__icon"/>
+                                            </asp:HyperLink>
+                                        </li>
+                                        <li class="footer__item">
+                                            <img src="img/arricon.png" class="footer__icon" />
 
-                                        <asp:HyperLink runat="server" NavigateUrl="#">
+                                            <asp:HyperLink runat="server" NavigateUrl="#">
                                          Chính sách vận chuyển
-                                        </asp:HyperLink>
-                                    </li>
-                                    <li class="footer__item">
-                                        <img src="img/arricon.png" class="footer__icon"/>
+                                            </asp:HyperLink>
+                                        </li>
+                                        <li class="footer__item">
+                                            <img src="img/arricon.png" class="footer__icon" />
 
-                                        <asp:HyperLink runat="server" NavigateUrl="#">
+                                            <asp:HyperLink runat="server" NavigateUrl="#">
                                          Hình thức thanh toán
-                                        </asp:HyperLink>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="l-3">
-                                <ul class="footer__menu">
-                                    <li class="footer__item">
-                                        <img src="img/arricon.png" class="footer__icon"/>
+                                            </asp:HyperLink>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="l-3">
+                                    <ul class="footer__menu">
+                                        <li class="footer__item">
+                                            <img src="img/arricon.png" class="footer__icon" />
 
-                                        <asp:HyperLink runat="server" NavigateUrl="#">
+                                            <asp:HyperLink runat="server" NavigateUrl="#">
                                             Quy định đổi trả huỷ đơn hàng
-                                        </asp:HyperLink>
-                                    </li>
-                                    <li class="footer__item">
-                                        <img src="img/arricon.png" class="footer__icon"/>
+                                            </asp:HyperLink>
+                                        </li>
+                                        <li class="footer__item">
+                                            <img src="img/arricon.png" class="footer__icon" />
 
-                                        <asp:HyperLink runat="server" NavigateUrl="#">
+                                            <asp:HyperLink runat="server" NavigateUrl="#">
                                          Hướng dẫn đặt hàng
-                                        </asp:HyperLink>
-                                    </li>
-                                    <li class="footer__item">
-                                        <img src="img/arricon.png" class="footer__icon"/>
+                                            </asp:HyperLink>
+                                        </li>
+                                        <li class="footer__item">
+                                            <img src="img/arricon.png" class="footer__icon" />
 
-                                        <asp:HyperLink runat="server" NavigateUrl="#">
+                                            <asp:HyperLink runat="server" NavigateUrl="#">
                                          Liên hệ
-                                        </asp:HyperLink>
-                                    </li>
-                                    <li class="footer__item">
-                                        <img src="img/arricon.png" class="footer__icon"/>
+                                            </asp:HyperLink>
+                                        </li>
+                                        <li class="footer__item">
+                                            <img src="img/arricon.png" class="footer__icon" />
 
-                                        <asp:HyperLink runat="server" NavigateUrl="#">
+                                            <asp:HyperLink runat="server" NavigateUrl="#">
                                          Thông báo
-                                        </asp:HyperLink>
-                                    </li>
-                                </ul>
+                                            </asp:HyperLink>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                     <div class="footer__second">
                         <p>&copy; 2014 - Bản quyền của Công Ty Cổ Phần Văn Hoá và Truyền Thông Nhã Nam - nhanam.com.vn</p>

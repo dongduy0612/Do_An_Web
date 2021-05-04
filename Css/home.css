@@ -17,26 +17,41 @@
 }
 
     .title__link::after {
-        content: "";
-        position: absolute;
-        background: url(../img/lbright.png);
-        display: block;
-        padding: 20px 28px 50px;
-        background-repeat: no-repeat;
-        top: 18%;
-        left: 100%;
-    }
+         content: "";
+    position: absolute;
+    background: url(../img/lbright.png);
+    display: block;
+    /* padding: 20px 28px 50px; */
+    background-repeat: no-repeat;
+    top: 18%;
+    /* left: 100%; */
+    width: 32px;
+    height: 95px;
+    right: -32px;
+}    
 
     .title__link::before {
         content: "";
-        position: absolute;
-        background: url(../img/lbleft.png);
-        display: block;
-        padding: 20px 28px 50px;
-        background-repeat: no-repeat;
-        top: 18%;
-        right: 85%;
+    position: absolute;
+    background: url(../img/lbleft.png);
+    display: block;
+    /* padding: 20px 28px 50px; */
+    background-repeat: no-repeat;
+    top: 18%;
+    height: 85px;
+    /* right: 92%; */
+    width: 32px;
+    left: -32px;
     }
+.btn.btnInfo{
+    text-decoration:none;
+    left:unset;
+    padding:8px;
+    font-size:1.2rem;
+}
+.btn.btnInfo + .btn.btnInfo{
+    margin-left:7px
+}
 
 .group_book {
     display: flex;
@@ -54,7 +69,7 @@
         animation: background 3s linear infinite;
     }
 
-        .group_book > ul > li {
+        .book__item {
             position: relative;
             display: inline-block;
             padding-bottom: 43px;
@@ -63,6 +78,11 @@
             animation: top 3s linear infinite;
             position: relative;
         }
+        .book__item img{
+   min-width:148px;
+   max-height:230px;
+
+}
 
 .book__item + .book__item {
     margin-left: 12px;
@@ -101,6 +121,7 @@
 }
 
 .book__item-notify {
+    background-repeat:no-repeat;
     background-image: url(../img/book_hover.png);
     padding: 16px;
     display: inline-block;
@@ -122,14 +143,18 @@
 }
 
     .book__item-notify > h3 {
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        color: white;
-        line-height: 1.5rem;
-        position: relative;
-        top: 9px;
-        left: 2%;
-        text-align:center;
+  font-size: 1.3rem;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1.5rem;
+    position: relative;
+    top: 9px;
+    left: 2%;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+   width: 200px;
     }
 
     .book__item-notify > ul {

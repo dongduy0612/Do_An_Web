@@ -7,6 +7,8 @@
             <div class="login__group">
                 <p>Email</p>
                 <asp:TextBox runat="server" ID="txtEmailLogin" ValidationGroup="login"></asp:TextBox>
+                 <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ValidationGroup="login" ControlToValidate="txtEmailLogin" Text="Email không được bỏ trống" Display="Dynamic" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+
                 <asp:RegularExpressionValidator ControlToValidate="txtEmailLogin" ValidationGroup="login" ID="RegularExpressionValidator1" runat="server" Text="Không đúng định dạng email" Display="Dynamic" ErrorMessage="RegularExpressionValidator" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             </div>
             <div class="login__group">
@@ -31,11 +33,18 @@
             <div class="register__group">
                 <p>Email</p>
                 <asp:TextBox runat="server" ID="txtEmailRegister" ValidationGroup="register"></asp:TextBox>
+                
+                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ValidationGroup="register" ControlToValidate="txtEmailRegister" Text="Email không được bỏ trống" Display="Dynamic" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+
+                
                 <asp:RegularExpressionValidator ControlToValidate="txtEmailRegister" ValidationGroup="register" ID="RegularExpressionValidator2" runat="server" Text="Không đúng định dạng email" Display="Dynamic" ErrorMessage="RegularExpressionValidator" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             </div>
             <div class="register__group">
                 <p>Mật khẩu</p>
                 <asp:TextBox runat="server" ID="txtPWRegister" TextMode="Password"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ValidationGroup="register" ControlToValidate="txtPWRegister" Text="Mật khẩu không được bỏ trống" Display="Dynamic" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+
+            
             </div>
             <div class="register__group">
                 <p>Xác nhận mật khẩu</p>
@@ -47,9 +56,25 @@
                 <asp:TextBox runat="server" ID="txtTenHienThi" ></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ValidationGroup="register" ControlToValidate="txtTenHienThi" Text="Tên hiển thị không được bỏ trống" Display="Dynamic" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
             </div>
+              <div class="register__group">
+                <p>Giới tính</p>
+                  <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                      <asp:ListItem Value="Nam" Text="Nam"></asp:ListItem>
+                      <asp:ListItem Value="Nữ" Text="Nữ"></asp:ListItem>
+                  </asp:RadioButtonList>
+            </div>
             <div class="register__group">
-                <p>Ngày sinh</p>
-                <asp:TextBox runat="server" ID="txtDate" TextMode="Date"></asp:TextBox>
+                <p>Số điện thoại</p>
+                <asp:TextBox runat="server" ID="txtPhone" ></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ValidationGroup="register" ControlToValidate="txtPhone" Text="Phone không được bỏ trống" Display="Dynamic" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+
+            </div>
+            
+            <div class="register__group">
+                <p>Đia chỉ</p>
+                <asp:TextBox runat="server" ID="txtAddress" ></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ValidationGroup="register" ControlToValidate="txtAddress" Text="Địa chỉ không được bỏ trống" Display="Dynamic" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+
             </div>
             
             <asp:Button runat="server" OnClick="btnRegister1_Click" ID="btnRegister1" Text="Đăng ký" ValidationGroup="register" CssClass="btn" />

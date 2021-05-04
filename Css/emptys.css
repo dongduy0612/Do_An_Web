@@ -24,8 +24,15 @@
     .login__group p,.register__group p {
         margin:8px 0;
     }
-.login__group input[type=password],.register__group input[type=date] {
+.login__group input:last-child,.register__group input:last-child {
     margin-bottom:8px;
+}
+.register__group td{
+    margin-right:12px;
+}
+.register__group tr{
+   display:flex;
+   margin-bottom:4px;
 }
 input {
     outline:none;
