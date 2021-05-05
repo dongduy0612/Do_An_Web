@@ -80,7 +80,7 @@ public partial class Home : System.Web.UI.Page
                 {
                     values += @"
                 <li class='book__item'>
-                    <a href='empty.aspx?modul=tl&submodul=ts' class='book'>
+                    <a href='empty.aspx?modul=s&ms="+r1["masach"].ToString()+@"' class='book'>
                        <img src='img/" + r1["hinhminhhoa"].ToString() + @"'/>
                     </a>
                     <div class='book__item-notify'>
@@ -88,8 +88,8 @@ public partial class Home : System.Web.UI.Page
                         </h3>
                         <ul class='book__item-notify-info'>
                             <li>Tên tác giả:" + r1["tentacgia"].ToString() + @"</li>
-                            <li>Năm sản xuất:" + r1["namxb"].ToString() + @"</li>
-                            <li>Ngày cập nhật:" + r1["ngaycapnhat"].ToString() + @"</li>
+                            <li>Năm sản xuất:" +DateTime.Parse(r1["namxb"].ToString()).ToShortDateString().ToString() + @"</li>
+                            <li>Ngày cập nhật:" + DateTime.Parse(r1["ngaycapnhat"].ToString()).ToShortDateString().ToString() + @"</li>
                         </ul>
                         <div class='book__item-price'>
                             <span class='book__item-price-new'>" + r1["dongia"].ToString() + @"</span>

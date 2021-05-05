@@ -4,6 +4,7 @@ GO
 USE QL_SACH
 GO
 
+select *from sach,nhaxuatban,theloai where sach.matheloai=theloai.matheloai and sach.manxb=nhaxuatban.manxb and masach='ms01'
 ---------------------------------------------------------------TẠO BẢNG,KHOÁ CHÍNH,KHOÁ NGOẠI--------------------------------------------------------
 ------TẠO BẢNG NHAXUATBAN
 CREATE TABLE NHAXUATBAN
@@ -17,10 +18,8 @@ CREATE TABLE THELOAI
 	MATHELOAI CHAR(10) NOT NULL PRIMARY KEY,
 	TENTHELOAI NVARCHAR(50)
 )
-------TẠO BẢNG SACH
-select *from theloai
-select *from sach where matheloai='TL08'
 
+------TẠO BẢNG SACH
 CREATE TABLE SACH
 (
 	MASACH CHAR(10) NOT NULL PRIMARY KEY, 

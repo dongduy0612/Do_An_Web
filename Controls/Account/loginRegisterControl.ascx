@@ -77,7 +77,7 @@
 
             </div>
             
-            <asp:Button runat="server" OnClick="btnRegister1_Click" ID="btnRegister1" Text="Đăng ký" ValidationGroup="register" CssClass="btn" />
+            <asp:Button runat="server" OnClick="btnRegister1_Click" ID="btnRegister1"  Text="Đăng ký" ValidationGroup="register" CssClass="btn btnDangKy" />
             <p>
                 <span>Bạn đã có tài khoản? Hãy </span>
            <asp:Button runat="server" Text="Đăng nhập" ID="btnLoginRegister"  CssClass="btn" OnClick="btnLoginRegister_Click" />

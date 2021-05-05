@@ -6,8 +6,8 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <link rel="stylesheet" href="Css/home.css" />
-    <link rel="stylesheet" href="Css/admin.css" />
+    <link href="Css/homes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Css/admins.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <%=load() %>

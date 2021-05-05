@@ -21,10 +21,8 @@
     position: absolute;
     background: url(../img/lbright.png);
     display: block;
-    /* padding: 20px 28px 50px; */
     background-repeat: no-repeat;
     top: 18%;
-    /* left: 100%; */
     width: 32px;
     height: 95px;
     right: -32px;
@@ -35,11 +33,9 @@
     position: absolute;
     background: url(../img/lbleft.png);
     display: block;
-    /* padding: 20px 28px 50px; */
     background-repeat: no-repeat;
     top: 18%;
     height: 85px;
-    /* right: 92%; */
     width: 32px;
     left: -32px;
     }

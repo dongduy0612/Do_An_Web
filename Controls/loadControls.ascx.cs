@@ -40,14 +40,9 @@ public partial class Controls_loadControls : System.Web.UI.UserControl
                         break;
                 }
                 break;
-            case "tl":
-                switch (submodul)                    
-                {
-                   case "ts":
+            case "s":
                         PlaceHolder1.Controls.Add(LoadControl("Book/book.ascx"));
-                        break;
-                }
-                break;
+                        break;               
             case "gt":
                PlaceHolder1.Controls.Add(LoadControl("Introduce/introduce.ascx"));
                 break;

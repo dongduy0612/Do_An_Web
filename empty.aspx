@@ -4,8 +4,8 @@
 <%@ Register Src="~/Controls/loadSideBarAdmin.ascx" TagPrefix="uc1" TagName="loadSideBarAdmin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <link rel="stylesheet" href="Css/emptys.css"/>
-    <link rel="stylesheet" href="Css/admin.css"/>    
+    <link rel="stylesheet" href="Css/Emptys.css"/>
+    <link rel="stylesheet" href="Css/admins.css"/>    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <%--<asp:Literal runat="server" ID="ltrLoadStatus"></asp:Literal>--%>

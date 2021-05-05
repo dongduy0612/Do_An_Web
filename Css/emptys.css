@@ -24,7 +24,10 @@
     .login__group p,.register__group p {
         margin:8px 0;
     }
-.login__group input:last-child,.register__group input:last-child {
+.btn.btnDangKy {
+    margin-top:8px;
+}
+.login__group input:last-child {
     margin-bottom:8px;
 }
 .register__group td{
@@ -80,7 +83,7 @@ p span{
 .book__info{
     display:flex;
     background-image:url(../img/headerbg.png);
-    padding:24px;
+    padding:24px 24px 24px 4px;
     justify-content:space-between;
     min-width:900px;
 }
@@ -101,11 +104,9 @@ p span{
         background:#ccc;
     }
 .book__info img {
-    max-height:420px;
-    max-width:420px;
-    min-width:200px;
-    min-height:200px;
-    margin-left:60px;
+    margin-left: 20px;
+    margin-right: 46px;
+    margin-top: 36px;
 }
 .book__info-right-left{
     display:flex;
