@@ -4,7 +4,6 @@ GO
 USE QL_SACH
 GO
 
-select *from sach,nhaxuatban,theloai where sach.matheloai=theloai.matheloai and sach.manxb=nhaxuatban.manxb and masach='ms01'
 ---------------------------------------------------------------TẠO BẢNG,KHOÁ CHÍNH,KHOÁ NGOẠI--------------------------------------------------------
 ------TẠO BẢNG NHAXUATBAN
 CREATE TABLE NHAXUATBAN
@@ -45,8 +44,7 @@ CREATE TABLE KHACHHANG
 	TENKH NVARCHAR(30) NOT NULL,
 	DIACHI NVARCHAR(50),
 	SDT CHAR(12),
-	GIOITINH NVARCHAR(5),
-	QUYEN CHAR(5) DEFAULT 'KH'
+	GIOITINH NVARCHAR(5)
 )
 
 ------TẠO BẢNG QUANTRI
@@ -54,8 +52,7 @@ CREATE TABLE QUANTRI
 (
 	EMAIL VARCHAR(30) NOT NULL PRIMARY KEY,
 	MATKHAU VARCHAR(20),
-	TENHIENTHI NVARCHAR(50),
-	QUYEN CHAR(5) DEFAULT 'admin'
+	TENHIENTHI NVARCHAR(50)
 )
 ------TẠO BẢNG NHANVIEN
 CREATE TABLE NHANVIEN
@@ -156,6 +153,7 @@ ALTER TABLE CHITIETDONDATHANG ADD CONSTRAINT CHK_DONGIA_CTDDH CHECK(DONGIA>0)
 ALTER TABLE CHITIETTHD ADD CONSTRAINT CHK_SOLUONG_CTHD CHECK(SOLUONG>0)
 ----ĐƠN GIÁ PHẢI LỚN HƠN 0
 ALTER TABLE CHITIETTHD ADD CONSTRAINT CHK_DONGIA_CTHD CHECK(DONGIA>0)
+select *from KHACHHANG
 
 ------------------------------------------------------------INSERT DỮ LIỆU---------------------------------------------------------------------------
 -----------------Bảng NHAXUATBAN
@@ -210,7 +208,7 @@ VALUES
 ('MS22',N'Sapiens Lược Sử Loài Người',223600,N'Quyển',N'Sapiens là một câu chuyện lịch sử lớn về nền văn minh nhân loại – cách chúng ta phát triển từ xã hội săn bắt hái lượm thuở sơ khai đến cách chúng ta tổ chức xã hội và nền kinh tế ngày nay.',N'Hinh22.jpg','30/05/2020','01/03/2021',N' Nina Shapiro, Kristin Loberg','TL04','NXB10')
 ------TẠO BẢNG QUANTRI
 
-INSERT INTO QUANTRI(EMAIL,MATKHAU,TENHIENTHI)
+INSERT INTO QUANTRI
 VALUES
 ('trungthanh200156@gmail.com','0798783624',N'Nguyễn Thành Trung'),
 ('dongduy0612@gmail.com','123456789',N'Dương Đông Duy'),

@@ -15,7 +15,11 @@
                 <p>Mật khẩu</p>
                 <asp:TextBox runat="server" ID="txtPWLogin" TextMode="Password"></asp:TextBox>
                 <br />
-                <asp:CheckBox ID="ckRemember" Text="Ghi nhớ" runat="server" />
+                <p></p>
+                <asp:RadioButtonList ID="RadioButtonList2" runat="server" RepeatColumns="2">
+                    <asp:ListItem Value="Khách hàng" Selected Text="Khách hàng"></asp:ListItem>
+                    <asp:ListItem Value="Quản trị" Text="Quản trị"></asp:ListItem>
+                </asp:RadioButtonList>
             </div>
             <asp:Button runat="server" ID="btnLogin" Text="Đăng nhập" OnClick="btnLogin_Click" ValidationGroup="login" CssClass="btn btnLogin" />
             <br />
